@@ -14,7 +14,7 @@ Here's a wireframe of the layout and the features we'd like to see:
 
 ### Requirements
 
-- The project is developed in Vue.js.
+- The project is developed in Vue.js with TypeScript.
 - The editor looks visually appealing and some thought went into UX.
   - Pixel perfection is not necessary.
   - Please do not use libraries like Tailwind CSS or replicate Momenterie's editor design.
