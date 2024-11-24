@@ -1,0 +1,89 @@
+/* importing fonts */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+    U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* colors */
+  --main-background-color: #3ea7ea;
+  --secondary-background-color: #ffffff;
+  --poster-main-background-color: #ffffff;
+  --main-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --poster-main-text-color: #000000;
+  --add-to-cart-background-color: #30d130;
+  --add-to-cart-text-color: #ffffff;
+  --error-red-color: #ff0202;
+
+  /* fonts */
+  --main-menu-font: 'Roboto';
+  --main-poster-font: 'Space Grotesk';
+
+  /* height */
+  --max-height-textarea: 170px;
+  --min-height-textarea: 40px;
+  --max-height-poster: 50rem;
+  --mid-height-poster: 40vw;
+  --min-height-poster: 25rem;
+
+  /* borders */
+  --rounded: 20px;
+
+  /* animation */
+  --appear-animation: appear 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s 1;
+}
+
+body {
+  background-color: var(--main-background-color);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body > * {
+  color: var(--secondary-text-color);
+  font-family: var(--main-menu-font);
+}
+
+body:has(#dark-checkbox:checked) {
+  --poster-main-background-color: #000000;
+  --poster-main-text-color: #ffffff;
+}
+
+body:has(#dark-gold-checkbox:checked) {
+  --poster-main-background-color: #000000;
+  --poster-main-text-color: #ffff18;
+}
+
+h3,
+label,
+button,
+textarea {
+  font-size: 1rem;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

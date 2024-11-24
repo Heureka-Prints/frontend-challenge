@@ -1,0 +1,22 @@
+.add-to-cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  width: 75%;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem;
+}
+
+form button:not(:disabled) {
+  background-color: var(--add-to-cart-background-color);
+  color: var(--add-to-cart-text-color);
+  cursor: pointer;
+}
+
+form button:active {
+  transform: scale(0.85);
+}
