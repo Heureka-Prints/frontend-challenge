@@ -1,0 +1,31 @@
+.poster-container {
+  background-color: var(--poster-main-background-color);
+  height: clamp(var(--min-height-poster), var(--mid-height-poster), var(--max-height-poster));
+  animation: var(--appear-animation);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.poster-content-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  color: var(--poster-main-text-color);
+  border: 3px solid var(--poster-main-text-color);
+  height: inherit;
+}
+
+.preview-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.preview-text-container h2 {
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 20ch;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-family: var(--main-poster-font);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+.editor-grid {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  height: 100vh;
+}
+
+.menu-grid-item {
+  background-color: var(--secondary-background-color);
+}
+
+@media screen and (min-width: 800px) {
+  .editor-grid {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+  }
+}
