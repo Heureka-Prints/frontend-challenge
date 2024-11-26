@@ -1,0 +1,89 @@
+@import './base.css';
+
+
+.add-to-cart {
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--color-button);
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.add-to-cart:disabled {
+  background-color: var(--color-button-disabled) ;
+  cursor: not-allowed;
+}
+
+.add-to-cart:hover:not(:disabled) {
+  background-color: var(--color-button-hover);
+}
+
+.drawer {
+  overflow: hidden;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.drawer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem; 
+  transition: height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.drawer-content[style*="display: none;"] {
+  height: 0;
+  opacity: 0;
+}
+
+.toggle-icon {
+  padding: 5px;
+  color: #555;
+}
+
+.drawer-enter-active,
+.drawer-leave-active {
+  transition: all 0.3s ease;
+}
+
+.drawer-enter-from,
+.drawer-leave-to {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.drawer-enter-to,
+.drawer-leave-from {
+  max-height: 200px; 
+  opacity: 1;
+}
+
+.shape-svg {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, stroke-width 0.3s ease;
+}
+
+.error-message {
+  color: red;
+}
+
+.error-message,
+.remaing-message {
+  font-size: var(--font-size-message);
+}
