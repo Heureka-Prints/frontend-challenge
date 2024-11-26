@@ -43,7 +43,7 @@ onUnmounted(() :void => {
 });
 
 const posterStyle = computed(() => {
-  const width = Math.min(viewportWidth.value * 0.4, 400); // 80% of viewport or max 400px for responsivenesss
+  const width = Math.min(viewportWidth.value * 0.4, 400); // 40% of viewport or max 400px for responsivenesss
 
   const [ratioWidth, ratioHeight] = props.aspectRatio ? props.aspectRatio.split('x').map(Number): [2, 3]; //Fallback
   const height = Math.round(width * (ratioHeight / ratioWidth));

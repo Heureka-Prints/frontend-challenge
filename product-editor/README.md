@@ -9,7 +9,7 @@ menu editor with the following functionalities:
 - **Customizations**:
   - **Aspect Ratio**: Choose from predefined ratios (e.g., 2x3, 3x4, 5x7).
   - **Shape**: Select shapes like heart, circle, and square.
-  - **Text**: Add and customize the text displayed on the poster.
+  - **Text**: Add and customize the text displayed on the poster (maximum length allowed:20).
   - **Background Color**: Customize the poster background color with a color picker.
 
 

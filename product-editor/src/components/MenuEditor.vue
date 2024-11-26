@@ -159,10 +159,6 @@
                         v-model="settings.bgColor"
                         type="color"
                         class="customization__bg-color"/>
-                        <p v-if="isTooLong" class="error-message">Text is too long. Maximum {{ maxLength }} characters allowed.</p>
-                        <p v-else>
-                        Remaining characters: {{ remainingCharacters }}
-                        </p>
                     </div>
                 </transition>
             </div>
