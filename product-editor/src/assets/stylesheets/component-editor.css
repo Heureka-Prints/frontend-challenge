@@ -1,0 +1,90 @@
+.menu-editor{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-editor__heading   {
+    border-bottom: 1px solid rgba(96, 94, 94, 0.613);
+    height: 32px;
+    display: block;
+    padding: 16px 16px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-editor__customizations{
+    padding: 1.5rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+@media (min-width: 990px) {
+    .menu-editor__customizations {
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+.customization__title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.25rem;
+    width: 100%;
+    color: var(--color-button);     
+    border: 2px solid var(--color-button); 
+    box-shadow: 0 4px 6px rgba(88, 37, 37, 0.2); 
+    border-radius: var(--border-radius);    
+}
+
+.customization__options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.customization__option{
+    font-size: 1rem;
+    width: 65px;
+    padding: 1rem;
+    border: 1px solid var(--color-text-unselected);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.customization__option:hover,
+.customization__option.selected {
+    border-color: #000;
+    font-weight: 500;
+}
+.customization__option.selected .shape-svg {
+    transform: scale(1.2); 
+}
+
+.customization__text-input{
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-text-unselected);
+    border-radius: var(--border-radius);
+}
+.drawer-content--text{
+    display: block !important;
+}
+.menu-editor__atc{
+    flex-shrink: 0; 
+    background-color: #fff;
+    position: sticky;
+    bottom: 0;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.customization__bg-color{
+    width: 200px;
+    margin-top:1rem;
+}
